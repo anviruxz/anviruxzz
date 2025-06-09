@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ANVIRUXZ - Mis Redes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0c6f345.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #3b0050, #1a0066, #000000, #ff0099);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      color: white;
+    }
+
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 15px #fff;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      max-width: 400px;
+      padding: 15px 20px;
+      margin: 10px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    .button i {
+      margin-right: 10px;
+      font-size: 1.5rem;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 25px rgba(255,255,255,0.4);
+    }
+
+    .youtube { background-color: #FF0000; }
+    .instagram { background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); }
+    .twitch { background-color: #9146FF; }
+    .kick { background-color: #53fc18; color: black; }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ANVIRUXZ</h1>
+
+  <a class="button youtube" href="https://youtube.com/@anviruxzvilla9477?si=0lfXy6JP4orjocis" target="_blank">
+    <i class="fab fa-youtube"></i> YouTube — Broadcast Yourself
+  </a>
+
+  <a class="button instagram" href="https://www.instagram.com/anvirux_villa/?__pwa=1#" target="_blank">
+    <i class="fab fa-instagram"></i> Instagram — Capture & Share
+  </a>
+
+  <a class="button twitch" href="https://www.twitch.tv/anviruxz_villa" target="_blank">
+    <i class="fab fa-twitch"></i> Twitch — You're in the Game
+  </a>
+
+  <a class="button kick" href="https://kick.com/anviruxz" target="_blank">
+    <i class="fas fa-gamepad"></i> Kick — Stream Your Way
+  </a>
+
+</body>
+</html>
